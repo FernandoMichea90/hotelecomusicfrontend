@@ -1,0 +1,64 @@
+
+
+.textoCentral{
+
+    text-align: center;
+}
+.fondoServicios{
+
+    background-color: #f5f5f5;
+}
+
+.divMargenesLaterales{
+
+    margin:0px 5vw 0vh  5vw!important
+
+}
+
+.margen70{
+
+    margin-top: 70px;
+}
+.divPadding64px{
+
+    padding-top: 100px;
+}
+
+div.eapps-widget {
+    position: relative;
+    width: 88vw!important;
+}
+
+
+.MuiCardHeader-root {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    height: 50px;
+}
+.MuiCardContent-root {
+    padding: 16px;
+    height: 50px;
+}
+.Carousel-indicator-15 {
+    color: #fe642a!important;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 200ms;
+}
+.Carousel-active-16 {
+    color: #7ece2b!important;
+}
+.CarouselItem .MuiPaper-elevation1 {
+    box-shadow: none!important  ;
+    /* box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgb(0 0 0 / 12%); */
+}
+.MuiFormLabel-root.Mui-focused{
+    color:#7ece2b!important
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+    border-color:#7ece2b!important;
+    border-width:2px
+}
+
+
