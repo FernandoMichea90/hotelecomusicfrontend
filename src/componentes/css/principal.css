@@ -46,8 +46,18 @@ div.eapps-widget {
     font-size: 15px;
     transition: 200ms;
 }
+.jss81 {
+    color: #fe642a!important;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 200ms;
+}
+
 .Carousel-active-16 {
     color: #7ece2b!important;
+}
+.jss82 {
+    color:  #7ece2b!important ;
 }
 .CarouselItem .MuiPaper-elevation1 {
     box-shadow: none!important  ;
