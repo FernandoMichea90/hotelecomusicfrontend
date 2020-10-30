@@ -71,4 +71,11 @@ div.eapps-widget {
     border-width:2px
 }
 
-
+.MuiCircularProgress-colorPrimary {
+    color: #7ece2b!important;
+  
+}
+.MuiCircularProgress-svg {
+    display: block;
+    height: 100px;
+}

@@ -29,7 +29,7 @@ const estilos =makeStyles((theme) => ({
     circular: {
         display: 'flex',
         '& > * + *': {
-          margin:'50vh 48vw'
+      
         },
         margin:'50vh 48vw'
       },
@@ -48,7 +48,7 @@ const Principal = () => {
             setLoading(true)
             setTimeout(()=>{
                 setLoading(false)
-            },3000)
+            },300000)
         }
 
         cambiarEstado()
@@ -69,7 +69,7 @@ if(loading)
         <ThemeProvider theme={theme}> 
         <div className={clases.circular}>
     
-      <CircularProgress color="primary" />
+      <CircularProgress color="primary"  />
     </div>
     </ThemeProvider>
     )
