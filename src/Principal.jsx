@@ -48,7 +48,7 @@ const Principal = () => {
             setLoading(true)
             setTimeout(()=>{
                 setLoading(false)
-            },300000)
+            },3000)
         }
 
         cambiarEstado()

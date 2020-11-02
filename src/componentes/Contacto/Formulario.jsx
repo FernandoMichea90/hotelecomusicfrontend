@@ -106,28 +106,17 @@ const Formulario = () => {
             asunto:""
           })
 
-
-
-
-        Swal.fire(
-            'Exito!',
-            'Correo enviado',
-            'success'
-    
-        )
+        Swal.fire('Exito!','Correo enviado','success')
+        setstate({
+          nombre:"",
+          correo:"",
+          asunto:""
+        }) 
       }
    
           } catch (error) {
-            Swal.fire(
-              'Error!',
-              'Correo no enviado',
-              'success'
-      
-          )
-
-
-            
-
+            Swal.fire('Error!','Correo no enviado','success')
+          
 
          
             
@@ -166,6 +155,7 @@ const Formulario = () => {
             label="Nombre"
             variant="outlined"
             name ="nombre"
+            value={state.nombre}
             error={error.nombre}
             helperText={error.nombre}
             onChange={actualizarDatos} 
@@ -179,6 +169,7 @@ const Formulario = () => {
       label="Correo" 
       variant="outlined"
       name="correo"
+      value={state.correo}
       error={error.correo}
       helperText={error.correo}
       onChange={actualizarDatos}
@@ -195,6 +186,7 @@ const Formulario = () => {
           error={error.asunto}
           helperText={error.asunto}
           onChange={actualizarDatos}
+          value={state.asunto}
           variant="outlined"
         />
 
