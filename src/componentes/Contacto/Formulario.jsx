@@ -4,6 +4,7 @@ import clienteAxios from '../../config/axios'
 import {Grid,TextField,Button} from '@material-ui/core'
 import {makeStyles} from '@material-ui/styles'
 import Swal from 'sweetalert2'
+import LinearProgress from '@material-ui/core/LinearProgress';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -19,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
 
 
 const Formulario = () => {
+
+
+    const [data,loading]=useState(null);
     const classes = useStyles();
     const [state, setstate] = useState({
       nombre:"",
@@ -32,25 +36,24 @@ const Formulario = () => {
         correo:""
     })
 
+
+
+
+
  const actualizarDatos=e=>{
 
     setstate({...state,[e.target.name]:e.target.value})
 
  }   
 
-
- 
-
-
-
-
-
  const mandarCorreo=async e=>{
 
 
 
           try {
+          
 
+          loading(true)
 
 
        
@@ -94,6 +97,7 @@ const Formulario = () => {
         console.log(err);
                 
         setError(err)
+        loading(null)
 
 
       }else{
@@ -112,13 +116,15 @@ const Formulario = () => {
           correo:"",
           asunto:""
         }) 
+        loading(null)
+
       }
    
           } catch (error) {
             Swal.fire('Error!','Correo no enviado','success')
           
 
-         
+            loading(null)
             
           }
 
@@ -145,6 +151,17 @@ const Formulario = () => {
     return (
         <div className={classes.espacioDiv}>
  <div className={classes.root} >
+    {data ?  
+          <div>
+          <LinearProgress color="secondary" />
+          <h1>
+            Enviando...
+          </h1>
+          </div>
+
+
+    
+   :
 
 <Grid container spacing={1}>
   <Grid container item xs={12} spacing={3}>
@@ -203,8 +220,11 @@ const Formulario = () => {
                  <Grid item xs={4}></Grid>
             </Grid>
 </Grid>
-            
+           
+          
 
+       
+    }
 
 </div>          
         </div>
