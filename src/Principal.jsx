@@ -14,6 +14,8 @@ import {ThemeProvider} from '@material-ui/styles'
 import theme from './themeConfig'
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Footer from './Footer/Footer'
+import Swal from 'sweetalert2'
+import Icono from '../src/Imagenes/hotelecomusic2.png'
 
 const estilos =makeStyles((theme) => ({
    
@@ -48,10 +50,30 @@ const Principal = () => {
             setLoading(true)
             setTimeout(()=>{
                 setLoading(false)
+
+            Swal.fire({
+                title: 'Aviso!',
+                html: 'Debido a la contingencia mundial del coronavirus , no estamos atendiendo, mientras tanto puedes  mantenerte informado en nuestras redes sociales ',
+                imageUrl:'./iconos/hotelecomusic2.png',
+                imageWidth: 400,
+                imageHeight: 100,
+                imageAlt: 'Custom image',
+              })
             },3000)
         }
 
         cambiarEstado()
+
+          
+        
+      
+
+              
+        
+
+
+
+
     }, [])
 
 
