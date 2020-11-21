@@ -44,7 +44,7 @@ const Servicios = () => {
 
     
     const calefaccion={ 
-        nombre:"Calefaccion",
+        nombre:"Agua Caliente",
         Url:"./iconos/calefaccion.png"
 
     }
@@ -111,6 +111,15 @@ const Servicios = () => {
                     <Caja Cajafuerte={tv}></Caja>
 
                     </Grid>    
+
+
+
+                    <Grid item xs={12}>
+                        <div className="nota">    
+                            <b>Importante:</b> debido a la circunstancias actuales  del coronavirus  y para evitar contagios, hotel ecomusic
+                            no estara brindando el servicio de desayuno, hasta proximo aviso 
+                        </div>
+                    </Grid>
               
             </Grid>
 

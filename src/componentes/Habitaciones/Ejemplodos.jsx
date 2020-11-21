@@ -45,6 +45,8 @@ export default function RecipeReviewCard(props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
+  const texto=`https://api.whatsapp.com/send?phone=56976226068&text=Hola,me gustaria consultar la disponibilidad de  la habitacion ${props.habitacion.categoria}`
+
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
@@ -87,7 +89,7 @@ export default function RecipeReviewCard(props) {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-        <Button variant="contained" color="primary" href="https://www.booking.com/" target="_blank">
+        <Button variant="contained" color="primary" href={texto} target="_blank">
                 Reservar    
         </Button>
         </CardContent>

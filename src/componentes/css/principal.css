@@ -87,3 +87,15 @@ div.eapps-widget {
     color: #fff;
     font-size: 1.0625em;
 }
+.swal2-title{
+    color:#be6ed6!important
+}
+
+.nota{
+    text-align: center;
+    margin-top: 12px;
+    background: #bc6bd5;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+}

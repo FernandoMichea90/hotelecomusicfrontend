@@ -22,7 +22,8 @@ const estilos =makeStyles((theme) => ({
     
 
     root:{
-        display:'flex'
+        display:'flex',
+       
     },
     content:{
     
@@ -35,6 +36,8 @@ const estilos =makeStyles((theme) => ({
         },
         margin:'50vh 48vw'
       },
+
+       
     
     }))
     
@@ -52,12 +55,12 @@ const Principal = () => {
                 setLoading(false)
 
             Swal.fire({
-                title: 'Aviso!',
-                html: 'Debido a la contingencia mundial del coronavirus , no estamos atendiendo, mientras tanto puedes  mantenerte informado en nuestras redes sociales ',
+                title: 'Estamos de vuelta !',
+                html: '<p> Hotel Ecomusic empieza a  funcionar   con todas las condiciones sanitarias  correspondientes a partir del 20 de noviembre. </p> Reserva tu habitacion y ven a tener tu merecido descanso a la joya del pacifico!!! ',
                 imageUrl:'./iconos/hotelecomusic2.png',
                 imageWidth: 400,
                 imageHeight: 100,
-                imageAlt: 'Custom image',
+                imageAlt: 'Hotel Ecomusic, habitaciones para reservar en valparaiso  hoteles en valparaiso',
               })
             },3000)
         }
