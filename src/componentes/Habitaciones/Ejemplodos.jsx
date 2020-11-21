@@ -58,7 +58,7 @@ export default function RecipeReviewCard(props) {
       />
       <CardMedia
         className={classes.media}
-        image="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/33852720.jpg?k=d7782abcf00351460f303338103d6e4bba94331142ebc540d62e03618935eb66&o="
+         image={props.habitacion.imagen}  
         title=""
       />
       <CardContent>

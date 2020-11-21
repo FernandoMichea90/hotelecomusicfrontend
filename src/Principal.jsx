@@ -19,7 +19,7 @@ import Icono from '../src/Imagenes/hotelecomusic2.png'
 
 const estilos =makeStyles((theme) => ({
    
-
+    
 
     root:{
         display:'flex'

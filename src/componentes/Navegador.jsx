@@ -8,7 +8,6 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Icono from '../Imagenes/hotelecomusic2.png';
 import {animateScroll as scroll} from 'react-scroll'
-import {Link} from '@material-ui/core';
 
 
 
@@ -30,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    marginRight: '0px',
+  
     paddingRight: '2px',
     marginLeft: '2px'
 }
