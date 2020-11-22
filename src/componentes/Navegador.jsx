@@ -69,7 +69,7 @@ export default function ButtonAppBar(props) {
          
           
          
-          <Button color="inherit"  href="https://www.booking.com/" target="_blank">Reservar</Button>
+          <Button color="inherit"  href="https://api.whatsapp.com/send?phone=56976226068&text=Hola,me gustaria hacer una reserva" target="_blank">Reservar</Button>
          
         </Toolbar>
       </AppBar>
