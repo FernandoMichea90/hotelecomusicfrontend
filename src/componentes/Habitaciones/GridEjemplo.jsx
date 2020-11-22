@@ -28,7 +28,7 @@ export default function FullWidthGrid() {
         categoria:"Superior con vista al mar",
         precio:"60.000",
         descripcion:"Habitacion matrimonial   con una espectacular vista al mar",
-        imagen:supvista
+        imagen:"https://lh3.googleusercontent.com/2vqUeaD7Ti5nh7IQgE-nCcNP8SsNmNCB7s5lxy17SMycU28P4MNFn9sJk81OIKPlsB-y14rxmc12qzgY=s239-c"
     }    
     const estandar={
       
@@ -43,14 +43,14 @@ export default function FullWidthGrid() {
     categoria:'Matrimonial con cama extra',
     precio:"60.000",
     descripcion:" Habitacion con cama matrimional y una cama single, ideal  para parejas con hijo  ",
-    imagen:camextra
+    imagen:"https://lh3.googleusercontent.com/-VXFDifAt70o/X7q0Qk35D4I/AAAAAAAAAAY/HjdMrRYusIYhk3vM6-PM361H3KhRYUWSwCLQBGAYYCw/s239-c/camextra.jpg"
 
    }
    const single={
      categoria:'Single',
      precio:"45.000",
      descripcion:"Habitacion individual , fabulosa para  viajeros solitarios",
-     imagen:Single
+     imagen:"https://lh3.googleusercontent.com/-d9FMj9--AX4/X7q310ixxDI/AAAAAAAAAAk/A09GhCKmFhsxbwrbhdkYEWRqG6m8Yp6iQCLQBGAYYCw/s239-c/IMG_0060.JPG"
    }
   
 
