@@ -48,7 +48,7 @@ const Principal = () => {
      const[loading,setLoading]=useState(false);   
 
     useEffect(() => {
-       
+       /*
         const cambiarEstado=()=>{
             setLoading(true)
             setTimeout(()=>{
@@ -62,15 +62,22 @@ const Principal = () => {
                 imageHeight: 100,
                 imageAlt: 'Hotel Ecomusic, habitaciones para reservar en valparaiso  hoteles en valparaiso',
               })
-            },3000)
+            },1000)
         }
 
         cambiarEstado()
-
+*/
           
         
       
-
+        Swal.fire({
+            title: 'Estamos de vuelta !',
+            html: '<p> Hotel Ecomusic empieza a  funcionar   con todas las condiciones sanitarias  correspondientes a partir del 20 de noviembre. </p> Reserva tu habitacion y ven a tener tu merecido descanso a la joya del pacifico!!! ',
+            imageUrl:'./iconos/hotelecomusic2.png',
+            imageWidth: 400,
+            imageHeight: 100,
+            imageAlt: 'Hotel Ecomusic, habitaciones para reservar en valparaiso  hoteles en valparaiso',
+          })
               
         
 
