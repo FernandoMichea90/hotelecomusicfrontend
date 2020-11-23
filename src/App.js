@@ -7,7 +7,7 @@ function App() {
     <div>
 
         <Helmet>
-          <title>Hotel Ecomusic</title>
+          <title>Prueba Hotel Ecomusic</title>
           <meta name="description" content="Hotel Ecomusic , es un hotel ambientado  en la musica internacional y nacional , cada habitacion esta inspirada en un artista de renombre. ademas  en hotel ecomusic creemos fervientemente un pais mas sustentable "/>
         </Helmet>
 
