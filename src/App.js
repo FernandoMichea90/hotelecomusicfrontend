@@ -3,12 +3,17 @@ import {BrowserRouter as Router ,Route,Switch}from 'react-router-dom'
 import Principal from './Principal'
 import {Helmet} from 'react-helmet'
 function App() { 
+
+    const description="Hotel Ecomusic , Reserva tu habitacion en el mejor hotel de valpo"
+
+
   return (
     <div>
 
         <Helmet>
+            <meta charset="utf-8" />
           <title>Hotel Ecomusic</title>
-          <meta name="description" content="Hotel Ecomusic , es un hotel ambientado  en la musica internacional y nacional , cada habitacion esta inspirada en un artista de renombre. ademas  en hotel ecomusic creemos fervientemente un pais mas sustentable "/>
+          <meta name="description" content={description}  data-react-helmet="true" />
         </Helmet>
 
       <Router>
