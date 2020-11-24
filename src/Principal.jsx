@@ -73,7 +73,7 @@ const Principal = () => {
         Swal.fire({
             title: 'Estamos de vuelta !',
             html: '<p> Hotel Ecomusic empieza a  funcionar   con todas las condiciones sanitarias  correspondientes a partir del 20 de noviembre. </p> Reserva tu habitacion y ven a tener tu merecido descanso a la joya del pacifico!!! ',
-            imageUrl:'./iconos/hotelecomusic2.png',
+            imageUrl:'./iconos/hotelecomusic.png',
             imageWidth: 400,
             imageHeight: 100,
             imageAlt: 'Hotel Ecomusic, habitaciones para reservar en valparaiso  hoteles en valparaiso',
