@@ -4,16 +4,18 @@ import Principal from './Principal'
 import {Helmet} from 'react-helmet'
 function App() { 
 
-    const description="Hotel Ecomusic , Reserva tu habitacion en el mejor hotel de valpo"
+    const description=`Reserva en Hotel  Ecomusic, Valparaíso. Sin gastos de reserva. Excelentes precios,Gran disponibilidad,Bajos Precios,Wifi gratuito, recepción las 24 horas.`
 
 
   return (
     <div>
 
         <Helmet>
+          <head>
             <meta charset="utf-8" />
           <title>Hotel Ecomusic</title>
           <meta name="description" content={description}  data-react-helmet="true" />
+          </head>
         </Helmet>
 
       <Router>
