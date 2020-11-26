@@ -13,8 +13,8 @@ function App() {
         <Helmet>
           <head>
             <meta charset="utf-8" />
-          <title>Hotel Ecomusic</title>
-          <meta name="description" content={description}  data-react-helmet="true" />
+          <title>Hotel Ecomusic Prueba </title>
+          <meta name="description" content="Reserva en Hotel  Ecomusic, Valparaíso. Sin gastos de reserva. Excelentes precios,Gran disponibilidad,Bajos Precios,Wifi gratuito, recepción las 24 horas."  data-react-helmet="true" />
           </head>
         </Helmet>
 
