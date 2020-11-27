@@ -8,7 +8,7 @@ const useStyles=makeStyles((theme)=>({
     margenes:{
         paddingTop:"68px",
         paddingBottom:"30px",
-        color:"#000000de"
+        color:"#000000de!important"
     },root: {
         flexGrow: 1,
         paddingBottom:"60px"
