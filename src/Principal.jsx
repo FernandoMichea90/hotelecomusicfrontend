@@ -16,6 +16,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import Footer from './Footer/Footer'
 import Swal from 'sweetalert2'
 import Icono from '../src/Imagenes/hotelecomusic2.png'
+import Comentariosdos from './Comentarios/Comentariosdos'
 
 const estilos =makeStyles((theme) => ({
    
@@ -143,9 +144,10 @@ if(loading)
                      <Habitacion></Habitacion>
                 </Grid>
             <Grid item xs={1}/> 
+          
             <Grid item xs={1}/>   
                 <Grid item xs={10}>
-                    <Comentarios></Comentarios>
+                    <Comentariosdos></Comentariosdos>
  
                 </Grid>
             <Grid item xs={1}/> 
