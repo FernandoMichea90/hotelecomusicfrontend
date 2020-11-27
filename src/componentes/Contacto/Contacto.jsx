@@ -1,4 +1,4 @@
-import {Grid} from '@material-ui/core'
+import {Grid, Hidden} from '@material-ui/core'
 import React from 'react'
 import Formulario from './Formulario'
 import Imagen from './Imagen'
@@ -41,13 +41,14 @@ const Contacto = () => {
  container spacing={1}>
 
     <Grid container item xs={6} spacing={3}>
+      <Hidden xsDown>
         <Imagen>
 
              </Imagen>
-
+    </Hidden>     
     </Grid>
 
-    <Grid container item xs={6} spacing={3}>
+    <Grid container item xs={12} spacing={3}>
     <Formulario></Formulario>
     </Grid>
        
