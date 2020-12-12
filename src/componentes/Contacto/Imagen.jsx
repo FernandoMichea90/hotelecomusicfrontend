@@ -30,7 +30,7 @@ const Imagen = () => {
 
     return (
         <div className={clases.divImagen}>
-            <img  className={clases.imagenMaleta} src={Image} ></img>
+            <img alt="Contacto Reservar Hotel Ecomusic" className={clases.imagenMaleta} src={Image} ></img>
         </div>
     )
 

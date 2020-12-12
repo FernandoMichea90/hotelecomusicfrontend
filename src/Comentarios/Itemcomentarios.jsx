@@ -1,18 +1,11 @@
 import React from 'react'
 
-import clsx from 'clsx';
+
 import '../componentes/css/principal.css'
-import {makeStyles,Button,Card,CardHeader,Avatar,Typography,CardActions} from '@material-ui/core'
-import Googleico from '../redes sociales/google.png'
-import Carousel from 'react-elastic-carousel';
-import CardMedia from '@material-ui/core/CardMedia';
+import {makeStyles,Card,CardHeader,Avatar,Typography} from '@material-ui/core'
+
 import CardContent from '@material-ui/core/CardContent';
-import Collapse from '@material-ui/core/Collapse';
-import IconButton from '@material-ui/core/IconButton';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ShareIcon from '@material-ui/icons/Share';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
+
 import PersonIcon from '@material-ui/icons/Person';
 import { red } from '@material-ui/core/colors';
 

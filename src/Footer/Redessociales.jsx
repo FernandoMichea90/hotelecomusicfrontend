@@ -29,18 +29,18 @@ const Redessociales = () => {
         <Grid container>
                 <Grid item xs={1} sm={2} md={1} lg={1}>
                     <Link href="https://www.instagram.com/hotelecomusicvalparaiso/" target="_blank">
-                            <img src={instagram} style={{height:'30px'}}></img>
+                            <img alt="instagram Hotel ecomusic" src={instagram} style={{height:'30px'}}></img>
                     </Link>
                 </Grid>
                 <Grid item xs={1} sm={2} md={1} lg={1}>
                     <Link href="https://www.facebook.com/hotelecomusic/" target="_blank">
                   
-                        <img src={facebook} style={{height:'30px'}}></img>
+                        <img alt="Facebook Hotel Ecomusic" src={facebook} style={{height:'30px'}}></img>
                     </Link>
                 </Grid>
                 <Grid item xs={1} sm={2} md={1} lg={1} >
                     <Link href="https://api.whatsapp.com/send?phone=56976226068&text=Hola" target="_blank">
-                        <img src={whatsapp} style={{height:'30px'}}></img>
+                        <img alt="Whatsapp Hotel Ecomusic" src={whatsapp} style={{height:'30px'}}></img>
                     </Link>
                 </Grid>   
 

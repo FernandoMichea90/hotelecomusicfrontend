@@ -1,6 +1,6 @@
 import React from 'react'
 import {makeStyles}  from '@material-ui/core/styles'
-import {Grid,Box, requirePropFactory} from '@material-ui/core' 
+import {Box} from '@material-ui/core' 
 
 import '../css/principal.css'
 
@@ -63,7 +63,7 @@ const Caja = (props) => {
                             >
                       
 
-                       <img className={classes.imagen} src={Cajafuerte.Url}   height="25">
+                       <img alt="Caja Fuerte" className={classes.imagen} src={Cajafuerte.Url}   height="25">
                        </img>    
  
                     </Box>

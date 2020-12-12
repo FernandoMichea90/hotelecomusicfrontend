@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
-import {Paper,Button} from '@material-ui/core'
+import {Paper} from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles'
 
 
@@ -43,7 +43,6 @@ export default function Example(props)
 
     var autoPlay=false;
     var timeout=100;
-    const imagen="https://i.pinimg.com/564x/71/7a/f3/717af3b38f04e8b4cea8bd3cbb2d999b.jpg"
 
     var items = [
         {
@@ -73,7 +72,7 @@ function Item(props)
           <Paper>
 
        <div className={clases.divPrincipal}>         
-       <img className={clases.imagenPrincipal} src={props.item.imagen}>
+       <img className={clases.imagenPrincipal} alt="Valparaiso, Cerro alegre" src={props.item.imagen}>
        </img>
        <h2>{props.item.name}</h2>
             <p>{props.item.description}</p>

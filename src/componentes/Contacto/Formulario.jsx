@@ -1,5 +1,4 @@
-import React,{ useEffect,useState} from 'react'
-import clienteAxios from '../../config/axios'
+import React,{useState} from 'react'
 
 import {Grid,TextField,Button} from '@material-ui/core'
 import {makeStyles} from '@material-ui/styles'
@@ -83,7 +82,7 @@ const Formulario = () => {
       }
 
 
-      if(!err.nombre==""||!err.asunto==""||!err.correo==""){
+      if(!err.nombre===""||!err.asunto===""||!err.correo===""){
      
         
         
@@ -103,7 +102,6 @@ const Formulario = () => {
       }else{
           
         
-        const respuesta =await  clienteAxios.post("/",state)
           setstate({
             nombre:"",
             correo:"",

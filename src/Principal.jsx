@@ -5,7 +5,6 @@ import Ubicacion from './componentes/Mapa/Ubicacion'
 import Servicios from './componentes/Servicios/Servicios'
 import Contacto from './componentes/Contacto/Contacto'
 import Whatsapp from './componentes/whatsapp'
-import Comentarios from './componentes/Comentarios'
 import Habitacion from './componentes/Habitaciones/Habitacion'
 import Nosotros from './componentes/Nosotros'
 import {makeStyles,Grid} from '@material-ui/core'
@@ -15,7 +14,6 @@ import theme from './themeConfig'
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Footer from './Footer/Footer'
 import Swal from 'sweetalert2'
-import Icono from '../src/Imagenes/hotelecomusic2.png'
 import Comentariosdos from './Comentarios/Comentariosdos'
 
 const estilos =makeStyles((theme) => ({
@@ -46,7 +44,7 @@ const estilos =makeStyles((theme) => ({
 const Principal = () => {
 
    
-     const[loading,setLoading]=useState(false);   
+     const[loading]=useState(false);   
 
     useEffect(() => {
        /*
@@ -72,11 +70,10 @@ const Principal = () => {
         
       
         Swal.fire({
-            title: 'Estamos de vuelta !',
-            html: '<p> Hotel Ecomusic empieza a  funcionar   con todas las condiciones sanitarias  correspondientes a partir del 20 de noviembre. </p> Reserva tu habitacion y ven a tener tu merecido descanso a la joya del pacifico!!! ',
             imageUrl:'./iconos/hotelecomusic.png',
-            imageWidth: 400,
-            imageHeight: 100,
+           
+            html: '<p> Hotel Ecomusic empieza a  funcionar   con todas las condiciones sanitarias  correspondientes a partir del 20 de noviembre. </p> Reserva tu habitacion y ven a tener tu merecido descanso a la joya del pacifico!!! ',
+          
             imageAlt: 'Hotel Ecomusic, habitaciones para reservar en valparaiso  hoteles en valparaiso',
           })
               

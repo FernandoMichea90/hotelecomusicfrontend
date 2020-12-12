@@ -1,6 +1,5 @@
 import React from 'react'
-import { List, ListItem, ListItemIcon, ListItemText ,Icon} from '@material-ui/core'
-import CloudQueueIcon from '@material-ui/icons/CloudQueue'
+import { List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core'
 import {Room,Home,RoomService,Comment,Hotel,Mail} from '@material-ui/icons'
 import {Link} from 'react-scroll'
 

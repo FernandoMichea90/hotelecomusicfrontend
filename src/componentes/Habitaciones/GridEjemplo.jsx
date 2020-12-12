@@ -1,12 +1,10 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
+
 import Grid from '@material-ui/core/Grid';
 import EjemploDos from './Ejemplodos'
 
-import supvista from '../../Imagenes/supvista.jpg'
-import camextra from '../../Imagenes/camextra.jpg'
-import Single from '../../Imagenes/single.JPG'
+
 
 
 const useStyles = makeStyles((theme) => ({

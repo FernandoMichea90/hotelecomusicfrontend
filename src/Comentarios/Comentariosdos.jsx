@@ -50,7 +50,7 @@ const useStyles=makeStyles((theme)=>({
     },
     
     color:{
-      display:"block",
+   
       margin:"45px auto",
       padding: "9px 20px",
     borderRadius: "16px",
@@ -117,11 +117,8 @@ numresenas:{
 const Comentariosdos = () => {
 
     const classes=useStyles()
-    const [expanded, setExpanded] = React.useState(false);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
+ 
     const items=  [
         {id: 1, usuario: 'Emer ODea',fecha:"10 meses atras" ,nota:5,comentario:"Comfortable rooms with private bathrooms and tasty breakfasts. Staff were also very friendly and the location is good."  },
         {id: 2, usuario:'Thanh Cong Pham',fecha:"2 años atras",notas:5,comentario:"Very nice hostel. Great view of the city. Nice neighbourhood with lots of places to eat, namely the best empanada place in Chile! Clean comfy beds, private bathrooms, fantastic breakfast and friendly staff.Pick a room with the view if you can, though it might get rowdy with passer-bys in the evening; it wasn't loud enough to bother us."},
@@ -166,7 +163,7 @@ const Comentariosdos = () => {
             <Grid container className={classes.fondo} >
                 <Grid container xs={12} sm={6}>
 
-                        <Grid xs={6}> <img className={classes.imagengoogle} src={Googleico}/></Grid>
+                        <Grid xs={6}> <img alt="Google Imagenes comentarios" className={classes.imagengoogle} src={Googleico}/></Grid>
                         <Grid xs={6}> <p>Google Reviews</p></Grid>
                         
                         <Grid xs={6}><h3 className={classes.numevaluacion}>4.5</h3></Grid>
@@ -198,7 +195,7 @@ const Comentariosdos = () => {
                      
 
 
-            <Carousel className={classes.fondocarrusel} itemsToShow={3} breakPoints={breakpoints}>
+            <Carousel className={classes.fondocarrusel} enableAutoPlay={true} isRTL={false} autoPlaySpeed={2000} itemsToShow={3} pagination={false} breakPoints={breakpoints}>
     {items.map(item => (
 
     <Itemcomentarios item={item}></Itemcomentarios>

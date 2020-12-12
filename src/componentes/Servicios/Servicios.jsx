@@ -1,9 +1,8 @@
 import React from 'react'
 import '../css/principal.css'
 import {makeStyles}  from '@material-ui/core/styles'        
-import {Grid,Box} from '@material-ui/core'
+import {Grid} from '@material-ui/core'
 import Caja from './Caja'
-import Calefaccion from '../../iconos/calefaccion.png'
 
 
 
