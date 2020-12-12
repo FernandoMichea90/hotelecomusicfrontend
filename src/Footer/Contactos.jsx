@@ -14,6 +14,12 @@ const useStyles=makeStyles((theme)=>({
         paddingBottom:"60px"
       }
 
+      ,color: {
+        color:"#000000de!important"
+
+      }
+
+
 }))
 
 
@@ -30,7 +36,7 @@ const Contactos = () => {
                 <Grid item xs={1}>
                     <MailIcon fontSize="small"></MailIcon>
                 </Grid>
-                <Grid item xs={11}>
+                <Grid item xs={11} className={clases.color}>
                     <Typography>contacto@ecomusichotel.com</Typography>     
                 </Grid>  
                 <Grid item xs={1}>
@@ -38,7 +44,7 @@ const Contactos = () => {
                 </Grid>
                 <Grid item xs={11}>
                       
-                    <Typography>+569 7622 6068</Typography>     
+                    <Typography className={clases.color}>+569 7622 6068</Typography>     
   
                 </Grid>       
 
