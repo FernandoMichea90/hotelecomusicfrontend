@@ -1,7 +1,8 @@
 import React from 'react'
 import {GoogleMap,
 withScriptjs,
-withGoogleMap
+withGoogleMap,
+Marker
 }from 'react-google-maps'
 
 const Map=(props)=> {
@@ -11,7 +12,9 @@ const Map=(props)=> {
         defaultCenter={{lat:-33.043653,lng:-71.627484}}
         text="Hotel Ecomusic"
         >
-
+            <Marker  position ={{lat:-33.043653,lng:-71.627484}}>
+                
+            </Marker>
         </GoogleMap>
 
     )

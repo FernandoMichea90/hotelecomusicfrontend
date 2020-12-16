@@ -17,6 +17,13 @@ import Precio from '@material-ui/icons/AttachMoney';
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
+    margin:"auto",
+    '& .MuiButton-root:hover	': {
+      background:"#7FCD0D!important"
+      }
+
+      
+  ,
   },
   media: {
     height: 0,
@@ -29,6 +36,22 @@ const useStyles = makeStyles((theme) => ({
       duration: theme.transitions.duration.shortest,
     }),
   },
+  boton:{
+    background:theme.palette.primary.naranjo,
+    color:"#FFFFFF",
+    borderRadius:"5px",
+    
+    fontFamily: 'Lato',
+    fontWeight: "bold",
+    width: "12vw",
+    marginBottom:"5vh",
+    
+    [theme.breakpoints.down('sm')]: {
+      width: "100px",
+    },
+
+
+   },
   expandOpen: {
     transform: 'rotate(180deg)',
   },
@@ -85,7 +108,7 @@ export default function RecipeReviewCard(props) {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-        <Button variant="contained" color="primary" href={texto} target="_blank">
+        <Button variant="contained" className={classes.boton} href={texto} target="_blank">
                 Reservar    
         </Button>
         </CardContent>

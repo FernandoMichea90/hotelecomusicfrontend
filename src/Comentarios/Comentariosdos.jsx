@@ -24,12 +24,13 @@ const useStyles=makeStyles((theme)=>({
           margin: "auto",
           padding: "10px",
           background: "#fafafa",
-          borderRadius: "33px"
+          borderRadius: "33px",
+          marginTop:"250px"
         },
         fondocarrusel:{
 
          
-          background: "#fafafa",
+          background: "#2d078200",
           borderRadius: "33px",
           marginTop:"20px",
           padding:"5px"
@@ -156,9 +157,7 @@ const Comentariosdos = () => {
     return (
 
         <div name="comentarios">
-                     <h1 className={classes.textCenter}  >
-                Comentarios  
-            </h1>
+                   
 
             <Grid container className={classes.fondo} >
                 <Grid container xs={12} sm={6}>
@@ -195,7 +194,7 @@ const Comentariosdos = () => {
                      
 
 
-            <Carousel className={classes.fondocarrusel} enableAutoPlay={true} isRTL={false} autoPlaySpeed={2000} itemsToShow={3} pagination={false} breakPoints={breakpoints}>
+            <Carousel showArrows={false} className={classes.fondocarrusel} enableAutoPlay={true} isRTL={false} autoPlaySpeed={2000} itemsToShow={3} pagination={false} breakPoints={breakpoints}>
     {items.map(item => (
 
     <Itemcomentarios item={item}></Itemcomentarios>

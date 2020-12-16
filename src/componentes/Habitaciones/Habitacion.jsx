@@ -2,7 +2,7 @@ import React from 'react'
 import '../css/principal.css'
 import GridEjemplo from './GridEjemplo'
 
-import {makeStyles} from '@material-ui/core'
+import {makeStyles,Typography} from '@material-ui/core'
 
 
   
@@ -11,6 +11,9 @@ const useStyles=makeStyles((theme)=>({
 
     root: {
         flexGrow: 1,
+        textAlign:"center",
+        marginTop:"250px",
+        marginBottom:"250px"
        
       },    
 
@@ -36,13 +39,11 @@ const Habitacion = () => {
     return (
 
         
-        <div name="habitaciones" className="divPadding64px divMargenesLaterales">
+        <div name="habitaciones" className={clases.root} >
         
-                  <h1 className={clases.textCenter}>
-
-                    Habitaciones
-                </h1>
-
+        <Typography variant="h3" color="textSecondary"  paragraph >
+                      Habitaciones
+                </Typography>
 
               <GridEjemplo></GridEjemplo>
       

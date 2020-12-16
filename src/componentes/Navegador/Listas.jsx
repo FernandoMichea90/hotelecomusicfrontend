@@ -1,18 +1,49 @@
 import React from 'react'
-import { List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core'
+import { List, ListItem, ListItemIcon, ListItemText, makeStyles } from '@material-ui/core'
 import {Room,Home,RoomService,Comment,Hotel,Mail} from '@material-ui/icons'
 import {Link} from 'react-scroll'
+import Icono from '../../Imagenes/hotelecomusicdos.png';
+
+
+
+const useStyles=makeStyles((theme)=>({
+
+    root:{
+     "& .MuiListItem-root, .MuiListItemIcon-root":{
+         color:"#7FCD0D!important"
+     },
+     "& .MuiListItem-root:hover":{
+        color:"#FF6600!important"
+
+    }   
+  
+
+    },
+    colico:{
+    }
+
+
+}))
+
+
 
 const Listas = (props) => {
+
+    const clases=useStyles()
+      
     return (
-        <div>
+        <div className={clases.root}>
             <List className="nav">
+
+               
+
+              
             <Link to="nosotros" smooth={true} duration={1000} onClick={props.onClose} >
 
                 <ListItem button >
                     
                     <ListItemIcon>
-                        <Home>
+                        <Home className={clases.colico}>
 
                         </Home>
                     </ListItemIcon>
@@ -27,7 +58,7 @@ const Listas = (props) => {
 
                 <ListItem  button>
                     <ListItemIcon>
-                        <Room></Room>
+                        <Room className={clases.colico}></Room>
                     </ListItemIcon>
                     <ListItemText>
                         Ubicacion 
@@ -38,7 +69,7 @@ const Listas = (props) => {
                 <Link to="servicios" smooth={true} duration={1000} onClick={props.onClose} >
                 <ListItem  button>
                     <ListItemIcon>
-                      <RoomService></RoomService>
+                      <RoomService className={clases.colico}></RoomService>
                     </ListItemIcon>
                     <ListItemText>
                         Servicios
@@ -49,7 +80,7 @@ const Listas = (props) => {
                 <Link to="habitaciones" smooth={true} duration={1000} onClick={props.onClose} >
                 <ListItem  button>
                     <ListItemIcon>
-                        <Hotel></Hotel>
+                        <Hotel className={clases.colico}></Hotel>
                     </ListItemIcon>
                     <ListItemText>
                         Habitaciones
@@ -61,7 +92,7 @@ const Listas = (props) => {
 
                 <ListItem  button>
                     <ListItemIcon>
-                    <Comment></Comment>
+                    <Comment className={clases.colico}></Comment>
                     </ListItemIcon>
                     <ListItemText>
                         Comentarios
@@ -73,7 +104,7 @@ const Listas = (props) => {
 
                 <ListItem  button>
                     <ListItemIcon>
-                        <Mail></Mail>
+                        <Mail className={clases.colico}></Mail>
                     </ListItemIcon>
                     <ListItemText>
                         Contacto

@@ -30,14 +30,14 @@ const Contactos = () => {
             
             <h3 className={clases.margenes}>
                 Comunicate Con Nosotros    
-            </h3>
+            </h3>   
         <div className={clases.root}>
         <Grid container>
                 <Grid item xs={1}>
                     <MailIcon fontSize="small"></MailIcon>
                 </Grid>
                 <Grid item xs={11} className={clases.color}>
-                    <Typography>contacto@ecomusichotel.com</Typography>     
+                    <Typography>contactocomusichotel.com</Typography>     
                 </Grid>  
                 <Grid item xs={1}>
                     <PhoneIcon fontSize="small"></PhoneIcon>

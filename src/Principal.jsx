@@ -126,21 +126,18 @@ if(loading)
                     <Nosotros ></Nosotros>
                 </Grid>
             <Grid item xs={1}/> 
-            <Grid item xs={1}/>   
-                <Grid item xs={10}>
-                    <Ubicacion></Ubicacion>
-                </Grid>
-            <Grid item xs={1}/> 
-            <Grid item xs={1}/>   
-                <Grid item xs={10}>
-                     <Servicios></Servicios>
-                </Grid>
-            <Grid item xs={1}/> 
+
             <Grid item xs={1}/>   
                 <Grid item xs={10}>
                      <Habitacion></Habitacion>
                 </Grid>
             <Grid item xs={1}/> 
+            
+            <Grid item xs={1}/>   
+                <Grid item xs={10}>
+                     <Servicios></Servicios>
+                </Grid>
+                <Grid item xs={1}/>   
           
             <Grid item xs={1}/>   
                 <Grid item xs={10}>
@@ -148,12 +145,12 @@ if(loading)
  
                 </Grid>
             <Grid item xs={1}/> 
-            <Grid item xs={1}/>   
-                <Grid item xs={10}>
-                     <Contacto></Contacto>
+           
+           
+                <Grid item xs={12}>
+                    <Ubicacion></Ubicacion>
                 </Grid>
-            <Grid item xs={1}/> 
-
+           
             <Footer></Footer>
 
 

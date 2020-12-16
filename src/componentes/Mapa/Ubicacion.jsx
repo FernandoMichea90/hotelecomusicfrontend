@@ -9,7 +9,7 @@ const useStyles=makeStyles((theme)=>({
 
     root: {
         flexGrow: 1,
-        paddingTop:"64px"
+        paddingTop:"300px"
       },    
 
     margenUbicacion:{
@@ -67,9 +67,7 @@ function Ubicacion() {
            
            
 
-            <h1 className={clases.textCenter}>
-                Ubicacion
-            </h1>
+            
 
 
          <div>

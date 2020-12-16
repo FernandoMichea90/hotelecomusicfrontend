@@ -25,12 +25,15 @@ const useStyles = makeStyles((theme)=>({
         width: '7rem', 
         height: '7rem',
         borderRadius:'61px' ,  
-        marginTop:'7px',
-                           
-        marginLeft:'19%',
+        margin:"auto",
+       
         [theme.breakpoints.up('md')]: {
-            marginLeft:'32%',
-          }
+          
+          },
+          [theme.breakpoints.down('sm')]: {
+            
+
+        }
       }
   }));
   

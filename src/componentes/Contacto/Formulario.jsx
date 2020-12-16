@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 
-import {Grid,TextField,Button} from '@material-ui/core'
+import {Grid,TextField,Button,Typography,Hidden} from '@material-ui/core'
 import {makeStyles} from '@material-ui/styles'
 import Swal from 'sweetalert2'
 import LinearProgress from '@material-ui/core/LinearProgress';
@@ -8,14 +8,60 @@ import LinearProgress from '@material-ui/core/LinearProgress';
 const useStyles = makeStyles((theme) => ({
     root: {
         '& .MuiTextField-root': {
-            margin: '17px 0px 17px 0px',
-            width: '25ch',
+            margin: '17px 18vw 17px 0px',
+            width: '100%',
+            [theme.breakpoints.down('sm')]: {
+              width:"100%",
+              margin: '17px 0vw 17px 0px',
+            },},
+        '& .MuiOutlinedInput-notchedOutline': {
+              borderColor:"#FFFFFF"
+              }
+
+
+          ,
+          '& .MuiInputLabel-outlined': {
+            color:"#FFFFFF!important"
             }
-      },
+
+            
+        
+        ,
+          '& .MuiButton-root:hover	': {
+            background:"#7FCD0D!important"
+            }
+
+            
+        ,
+        },
       espacioDiv:{
-        margin:'15vh 0px 0px 5vw'
-   }
-  }));
+        margin:'0vh 0px 0px 5vw'
+   
+  },
+  margendos:{
+
+    margin:"9px 20px 30px 0"
+  },
+  boton:{
+    background:theme.palette.primary.naranjo,
+    color:"#FFFFFF",
+    borderRadius:"5px",
+    
+    fontFamily: 'Lato',
+    fontWeight: "bold",
+    width: "12vw",
+    marginBottom:"5vh",
+    
+    [theme.breakpoints.down('sm')]: {
+      width: "100px",
+    },
+
+
+   },
+  
+
+}
+  ));
 
 
 const Formulario = () => {
@@ -163,10 +209,15 @@ const Formulario = () => {
 
 <Grid container spacing={1}>
   <Grid container item xs={12} spacing={3}>
-
+      <Hidden only={['sm','md', 'lg','xl']} >
+            <Typography className={classes.margendos} variant="h3">
+                Contacto      
+            </Typography> 
+      </Hidden>
 
             <TextField 
             id="outlined-basic" 
+            color="primary"
             label="Nombre"
             variant="outlined"
             name ="nombre"
@@ -207,15 +258,15 @@ const Formulario = () => {
 
   </Grid>
 
-  <Grid  container item xs={12} spacing={3}>
+  <Grid  container style={{margin:"0"}} item xs={12} spacing={3}>
 
-                <Grid item xs={4}></Grid>
+               
                 <Grid item xs={4}>
-                    <Button onClick={()=>mandarCorreo()} variant="contained" color="primary">
+                    <Button onClick={()=>mandarCorreo()} variant="contained" className={classes.boton}>
                     Enviar
                     </Button>
                  </Grid>
-                 <Grid item xs={4}></Grid>
+                
             </Grid>
 </Grid>
            

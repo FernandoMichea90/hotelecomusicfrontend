@@ -1,18 +1,31 @@
 import React from 'react'
 import '../css/principal.css'
 import {makeStyles}  from '@material-ui/core/styles'        
-import {Grid} from '@material-ui/core'
+import {Grid,Typography} from '@material-ui/core'
 import Caja from './Caja'
 
 
 
 
 
-const useStyles=makeStyles((thema)=>({
+const useStyles=makeStyles((theme)=>({
 
     margenArriba:{
-        paddingTop:"64px"
+        paddingTop:"127px",
+        
+       
 
+    },
+    textoCentra:{
+        textAlign:"center",
+        marginBottom:"80px"
+    },
+    margen:{
+
+        marginTop:"80px"
+    },
+    centro:{
+        textAlign:"center"
     }
 
 }))
@@ -50,7 +63,7 @@ const Servicios = () => {
 
     const amenities={ 
         nombre:"Amenities",
-        Url:"./iconos/champu.png"
+        Url:"./iconos/limpiador.png"
 
     }
 
@@ -78,12 +91,12 @@ const Servicios = () => {
     return (
         <div name="servicios" className={clases.margenArriba} >
 
-            <h1 className="textoCentral">
-                Servicios 
-            </h1>
+                <Typography className={clases.centro} variant="h3" color="textSecondary"  paragraph >
+                      Servicios
+                </Typography>
             
 
-            <Grid    container spacing={1}>
+            <Grid   className={clases.margen}  container spacing={1}>
 
                     <Grid item xs={6} sm={4}>
                         <Caja Cajafuerte={cajaFuerte}></Caja>

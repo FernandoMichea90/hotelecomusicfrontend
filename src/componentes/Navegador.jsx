@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import Icono from '../Imagenes/hotelecomusic.png';
+import Icono from '../Imagenes/hotelecomusicdos.png';
 import {animateScroll as scroll} from 'react-scroll'
 
 
@@ -14,10 +14,7 @@ import {animateScroll as scroll} from 'react-scroll'
 const scrollalTop =()=>{
 
 
-  console.log("...escuchando");
-  
-  
-  scroll.scrollToTop();
+ 
 
   
 }
@@ -26,23 +23,60 @@ const scrollalTop =()=>{
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    
+    '& .MuiButton-root:hover	': {
+      background:"#7FCD0D!important"
+      }
+
+      
+  ,
+
   },
   menuButton: {
     marginRight: theme.spacing(2),
   
     paddingRight: '2px',
-    marginLeft: '2px'
-}
+    marginLeft: '2px',
+    [theme.breakpoints.down('sm')]: {
+      marginRight:'0px',
+  
+    paddingRight: '0px',
+    marginLeft: '0px',}
+},
+      barra:{
+        background:"#ff660000",
+        boxShadow:"none"
+       
+      }
 
   ,
   title: {
     flexGrow: 1,
   },
   logo:{
-    height:'45px'
+    maxHeight:'45px',
+      [theme.breakpoints.down('sm')]: {
+        height:"5vh"
+},
   },
 
-  offset:theme.mixins.toolbar
+  boton:{
+      background:theme.palette.primary.naranjo,
+      color:"#FFFFFF",
+      borderRadius:"5px",
+      
+      fontFamily: 'Lato',
+      fontWeight: "bold"
+      ,
+      [theme.breakpoints.down('sm')]: {
+        marginRight:'vw'
+
+
+
+     }},
+     
+
+ 
 }));
 
 export default function ButtonAppBar(props) {
@@ -50,13 +84,13 @@ export default function ButtonAppBar(props) {
 
   return (
     <div className={classes.root} >
-      <AppBar position="fixed" >
+      <AppBar position="fixed" className={classes.barra}>
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu"
           onClick={()=>props.accionAbrir()}
           >
             
-            <MenuIcon />
+            <MenuIcon color="secondary" />
             
           </IconButton>
           
@@ -69,7 +103,7 @@ export default function ButtonAppBar(props) {
          
           
          
-          <Button color="inherit"  href="https://api.whatsapp.com/send?phone=56976226068&text=Hola,me gustaria hacer una reserva" target="_blank">Reservar</Button>
+          <Button  variant="contained"  className={classes.boton}  href="https://api.whatsapp.com/send?phone=56976226068&text=Hola,me gustaria hacer una reserva" target="_blank">Reservar</Button>
          
         </Toolbar>
       </AppBar>

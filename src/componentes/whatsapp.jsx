@@ -3,22 +3,25 @@ import {makeStyles} from '@material-ui/styles'
 import Link from '@material-ui/core/Link';
 
 
-const useStyle=makeStyles({   
+const useStyle=makeStyles((theme) => ({   
 
         
     whats:{
     height: '89px',
     position: 'fixed',
-    bottom: '8px',
-    right: '60px',
-    zIndex:'2'    
-  
+    bottom: '36px',
+    right: '48px',
+    zIndex:'2',    
+    [theme.breakpoints.down('sm')]: {
+        bottom: '16px',
+        right: '13px',
+      },
     }
   
 
 
 
-})
+}))
 
 
 const Whatsapp = () => {
