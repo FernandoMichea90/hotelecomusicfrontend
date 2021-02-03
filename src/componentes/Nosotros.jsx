@@ -79,7 +79,6 @@ Constaras de comodas habitaciones cada uno con un baño privado  ,informacion  t
                     </Typography>
                 
                 
-                <img src={Arbol}  className={clases.imagen} />
         </div>
     )
 }
