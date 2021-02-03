@@ -69,13 +69,13 @@ const Principal = () => {
           
         
       
-        Swal.fire({
-            imageUrl:'./iconos/hotelecomusic.png',
+        // Swal.fire({
+        //     imageUrl:'./iconos/hotelecomusic.png',
            
-            html: '<p> Hotel Ecomusic empieza a  funcionar   con todas las condiciones sanitarias  correspondientes a partir del 20 de noviembre. </p> Reserva tu habitacion y ven a tener tu merecido descanso a la joya del pacifico!!! ',
+        //     html: '<p> Hotel Ecomusic empieza a  funcionar   con todas las condiciones sanitarias  correspondientes a partir del 20 de noviembre. </p> Reserva tu habitacion y ven a tener tu merecido descanso a la joya del pacifico!!! ',
           
-            imageAlt: 'Hotel Ecomusic, habitaciones para reservar en valparaiso  hoteles en valparaiso',
-          })
+        //     imageAlt: 'Hotel Ecomusic, habitaciones para reservar en valparaiso  hoteles en valparaiso',
+        //   })
               
         
 

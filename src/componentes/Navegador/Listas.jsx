@@ -9,14 +9,13 @@ import Icono from '../../Imagenes/hotelecomusicdos.png';
 const useStyles=makeStyles((theme)=>({
 
     root:{
-     "& .MuiListItem-root, .MuiListItemIcon-root":{
+     "& .MuiListItem-root,  .MuiListItemIcon-root":{
          color:"#7FCD0D!important"
      },
      "& .MuiListItem-root:hover":{
         color:"#FF6600!important"
 
-    }   
-  
+    }
 
     },
     colico:{

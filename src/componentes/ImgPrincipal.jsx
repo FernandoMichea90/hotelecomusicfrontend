@@ -20,6 +20,7 @@ const useStyles=makeStyles((theme)=>({
           },
           [theme.breakpoints.up('md')]: {
             height:'100vh',
+            maxHeight:'810px'
           }
 
     },
