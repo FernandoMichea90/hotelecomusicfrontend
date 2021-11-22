@@ -65,7 +65,7 @@ const Listas = (props) => {
                     </ListItemText>
                 </ListItem>
                 </Link>
-                <Link to="servicios" smooth={true} duration={1000} onClick={props.onClose} >
+                {/* <Link to="servicios" smooth={true} duration={1000} onClick={props.onClose} >
                 <ListItem  button>
                     <ListItemIcon>
                       <RoomService className={clases.colico}></RoomService>
@@ -75,7 +75,7 @@ const Listas = (props) => {
                         
                     </ListItemText>
                 </ListItem>
-                </Link>
+                </Link> */}
                 <Link to="habitaciones" smooth={true} duration={1000} onClick={props.onClose} >
                 <ListItem  button>
                     <ListItemIcon>

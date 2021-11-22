@@ -102,3 +102,135 @@ div.eapps-widget {
 .material-icons{
     color:#ffb533
 }
+
+.Carousel-indicator {
+    color: #7FCD0D!important;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 200ms;
+}
+.Carousel-active-18 {
+    color: #FF8B3E!important;
+}
+
+.linkclass{
+    cursor:pointer;
+    padding:24px 24px; 
+ 
+}
+.linkclass:hover{
+    
+    text-decoration: none!important;
+    color: #61a917;
+    }
+
+.textoNavegador{
+    font-size: 1rem;
+    font-family: Lato;
+    font-weight: 500;
+    line-height: -1.5;
+    text-transform: uppercase;
+    color: #707070;
+}
+
+.divCarousel{
+
+    position: relative;
+   
+    height: 100%;
+    width: 100%;
+
+}
+.divCarouselDos{
+
+    position: relative;
+
+    background-image: url('../../Imagenes/imgDos.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 959px){
+    .divCarouselDos{
+    position: relative;
+
+    background-image:unset;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+}
+
+.carouselSon{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background:#434343c2;
+    border-radius: 20px;
+    color:#ffffff;
+    padding:25px
+
+}
+@media only screen and (max-width: 993px){
+
+.carouselSon{
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background:#434343c2;
+    border-radius: 20px;
+    color:#ffffff;
+    padding:25px
+
+}
+}
+
+
+.carouselSonDos{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color:#434343;
+    border-radius: 20px;
+    background:#ffffff; 
+    padding:25px
+
+}
+
+@media only screen and (max-width: 959px){
+.carouselSonDos{
+
+
+position: absolute;
+    left: unset;
+    top: 50%;
+    transform: translate(50%, -50%);
+    color: #434343;
+    border-radius: 20px;
+    background: #ffffffd6;
+    padding: 25px;
+}
+
+}
+
+
+.centrado{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+

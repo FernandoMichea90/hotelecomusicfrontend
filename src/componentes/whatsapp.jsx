@@ -12,8 +12,8 @@ const useStyle=makeStyles((theme) => ({
     bottom: '36px',
     right: '48px',
     zIndex:'2',    
-    [theme.breakpoints.down('sm')]: {
-        bottom: '16px',
+    [theme.breakpoints.down('md')]: {
+        bottom: '90px',
         right: '13px',
       },
     }

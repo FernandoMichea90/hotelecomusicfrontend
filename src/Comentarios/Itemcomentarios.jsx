@@ -54,7 +54,8 @@ const useStyles=makeStyles((theme)=>({
       maxWidth:300,
       height:300,
       marginTop:"20px",
-      marginBottom:"20px"
+      marginBottom:"20px",
+      width:"250px",
     },
  
 avatar: {
@@ -84,11 +85,11 @@ const Itemcomentarios = (props) => {
         <div>
                  <Card key={item.key} className={classes.tarjeta}>
               <CardHeader
-        avatar={
-          <Avatar aria-label="recipe" className={classes.avatar}>
-              <PersonIcon></PersonIcon>
-          </Avatar>
-        }
+        // avatar={
+        //   <Avatar aria-label="recipe" className={classes.avatar}>
+        //       {/* <PersonIcon></PersonIcon> */}
+        //   </Avatar>
+        // }
        
         title={item.usuario}
        

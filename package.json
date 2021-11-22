@@ -18,7 +18,7 @@
     "react-elastic-carousel": "^0.9.5",
     "react-google-maps": "^9.4.5",
     "react-helmet": "^6.1.0",
-    "react-material-ui-carousel": "^1.9.1",
+    "react-material-ui-carousel": "^2.2.7",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-scroll": "^1.8.1",

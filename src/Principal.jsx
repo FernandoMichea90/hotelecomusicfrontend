@@ -3,7 +3,7 @@ import Navegador from './componentes/Navegador'
 import ImgPrincipal  from './componentes/ImgPrincipal'
 import Ubicacion from './componentes/Mapa/Ubicacion'
 import Servicios from './componentes/Servicios/Servicios'
-import Contacto from './componentes/Contacto/Contacto'
+import Contacto from './componentes/Contacto'
 import Whatsapp from './componentes/whatsapp'
 import Habitacion from './componentes/Habitaciones/Habitacion'
 import Nosotros from './componentes/Nosotros'
@@ -15,6 +15,10 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import Footer from './Footer/Footer'
 import Swal from 'sweetalert2'
 import Comentariosdos from './Comentarios/Comentariosdos'
+import Habitaciones from './componentes/Habitaciones'
+import Suscribirse from './componentes/Suscribirse'
+import {  Hidden } from '@material-ui/core'
+import MenuDown from './componentes/MenuDown'
 
 const estilos =makeStyles((theme) => ({
    
@@ -127,17 +131,30 @@ if(loading)
                 </Grid>
             <Grid item xs={1}/> 
 
-            <Grid item xs={1}/>   
+
+              
+                <Grid item xs={12}>
+                     <Habitaciones></Habitaciones>
+                </Grid>
+           
+             
+                <Grid item xs={12}>
+                     <Suscribirse></Suscribirse>
+                </Grid>
+           
+            
+
+            {/* <Grid item xs={1}/>   
                 <Grid item xs={10}>
                      <Habitacion></Habitacion>
                 </Grid>
-            <Grid item xs={1}/> 
-            
+            <Grid item xs={1}/>  */}
+{/*             
             <Grid item xs={1}/>   
                 <Grid item xs={10}>
                      <Servicios></Servicios>
                 </Grid>
-                <Grid item xs={1}/>   
+                <Grid item xs={1}/>    */}
           
             <Grid item xs={1}/>   
                 <Grid item xs={10}>
@@ -151,11 +168,16 @@ if(loading)
                     <Ubicacion></Ubicacion>
                 </Grid>
            
-            <Footer></Footer>
-
+          
 
         </Grid>    
 
+        <Contacto></Contacto>
+          
+        <Hidden lgUp>
+        <MenuDown></MenuDown>
+        </Hidden>
+        
         <Whatsapp></Whatsapp>
          <Cajon variant="temporary" open={abrir} onClose={accionAbrir} ></Cajon>
 

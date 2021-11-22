@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react' 
 import Map from './Map'
 import {makeStyles} from '@material-ui/core/styles'
 
@@ -51,11 +51,6 @@ const useStyles=makeStyles((theme)=>({
 function Ubicacion() {
 
     const clases=useStyles();
-  
-
-    
-
-
     
     const mapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE-9odbKyIEJykp0KazN_qtZbFyaNPQtc&v=3.exp&libraries=geometry,drawing,places"
     
