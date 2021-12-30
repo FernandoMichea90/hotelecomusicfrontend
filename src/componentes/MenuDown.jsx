@@ -52,13 +52,14 @@ const estilos=makeStyles((theme)=>({
 
 
 
-const MenuDown = () => {
+const  MenuDown = () => {
     const clases=estilos()
+    const ubicacion='https://www.google.com/maps/dir//Hostal+Ecomusic+-+P.%C2%BA+Dimalow+231,+Valpara%C3%ADso/@-33.0436406,-71.6297148,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9689e12ed953843f:0x83b600b3a891ade9!2m2!1d-71.6275261!2d-33.0436451!3e0'
     return (
         <div className={clases.root}>
             <Grid container >
                <Grid xs={4}>
-                    <Link href="tel:+56-34-242-0826" target="_blank">
+                    <Link href="tel:+56-9-7622-6068" target="_blank">
                    <div  className={clases.divPrincipal}>
                         <Typography align="center">
                         <CallIcon></CallIcon>    
@@ -71,7 +72,7 @@ const MenuDown = () => {
                     </Link>
                 </Grid>     
                 <Grid xs={4}>
-                <Link  href="https://e9ce63006869ea140e20053ac15620ffc8ee3a0b.agenda.softwaredentalink.com/agendas/agendamiento " target="_blank"> 
+                <Link  href="https://api.whatsapp.com/send?phone=56976226068&text=Hola,me%20gustaria%20hacer%20una%20reserva" target="_blank"> 
                     <div  className={clases.divPrincipal}>
                         <Typography align="center">
                         <EventIcon></EventIcon>
@@ -84,7 +85,7 @@ const MenuDown = () => {
                         </Link>
                 </Grid>     
                 <Grid xs={4}>
-                    <Link href="https://www.google.com/maps/dir//Odontolog%C3%ADa+Almendral+Los+Andes/data=!4m8!4m7!1m0!1m5!1m1!1s0x968804e06480374f:0xfcb27c87d5cd2f04!2m2!1d-70.596964!2d-32.833785" target="_blank">
+                    <Link href={ubicacion} target="_blank">
                     <div  className={clases.divPrincipal}>
                         <Typography align="center">
                                  <DirectionsIcon></DirectionsIcon>

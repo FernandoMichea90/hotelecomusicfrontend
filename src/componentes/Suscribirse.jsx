@@ -1,5 +1,5 @@
 import { Typography,Grid,makeStyles,TextField,Button } from '@material-ui/core'
-import React from 'react'
+import React,{useState} from 'react'
 import Beatles from '../Imagenes/beatles.png'
 
 
@@ -103,6 +103,10 @@ imgBeatles:{
 const Suscribirse = () => {
 
     const clases=estilos()
+    const [suscritor, setsuscritor] = useState({})
+
+
+    
 
     return (
         <div  className={clases.divCaja}>
@@ -123,8 +127,8 @@ const Suscribirse = () => {
                 className={clases.texto}
                 >
 
-                            Suscríbete al newsletter y recibe nuestros descuentos y
-                             promociones en hotel y restaurante.
+                            Suscríbete al newsletter, para recibir nuestras promociones  y todas las actividades semanales de valparaiso 
+    
                 </Typography>
 
                     </Grid>
