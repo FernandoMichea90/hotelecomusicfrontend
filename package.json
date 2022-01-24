@@ -10,6 +10,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
+    "formik": "^2.2.9",
     "google-map-react": "^2.1.9",
     "google-maps-reviews": "^0.1.1",
     "google-places-web": "^1.0.1",
@@ -19,11 +20,12 @@
     "react-google-maps": "^9.4.5",
     "react-helmet": "^6.1.0",
     "react-material-ui-carousel": "^2.2.7",
-    "react-router-dom": "^5.2.0",
+    "react-router-dom": "^6.2.1",
     "react-scripts": "3.4.3",
     "react-scroll": "^1.8.1",
     "styled-components": "^5.2.1",
-    "sweetalert2": "^10.8.1"
+    "sweetalert2": "^10.8.1",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,7 +1,9 @@
 import React from 'react'
-import {BrowserRouter as Router ,Route,Switch}from 'react-router-dom'
 import Principal from './Principal'
 import {Helmet} from 'react-helmet'
+import Login from './Administracion/Login/login'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
 function App() { 
 
   return (
@@ -15,14 +17,14 @@ function App() {
           
         </Helmet>
 
-      <Router>
-                <Switch>
-                <Route exac path="/" component={Principal}></Route>
-
-
-                </Switch>
+      <BrowserRouter>
+                <Routes>
+                <Route  path="/" element={<Principal/>}></Route>
+                <Route path="/admin" element={<Login/>}></Route>
+             
+                </Routes>
               
-        </Router>
+        </BrowserRouter>
     </div>
   )
 }
