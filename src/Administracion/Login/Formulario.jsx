@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
-import { Button, Typography, Link, IconButton,TextField,makeStyles} from '@material-ui/core'
+import { Typography, Link, IconButton, TextField, makeStyles, Grid, Button } from '@material-ui/core'
 import LockIcon from '@material-ui/icons/Lock';
-import Avatar from '@material-ui/icons/Person';
+import Avatar from '@material-ui/core/Avatar';
 import FormControl from '@material-ui/core/FormControl';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
@@ -10,10 +10,16 @@ import InputAdornment from '@material-ui/core/InputAdornment';
 import OutlinedInput from '@material-ui/core/OutlinedInput';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormHelperText from '@material-ui/core/FormHelperText';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import { estilos as EstilosGeneral } from '../Estilos'
+import Google from '../../../src/google.png'
+import { LoginGmail } from '../Firebase/Login';
+import {useNavigate} from 'react-router-dom'
+
+
 import * as yup from 'yup'
-import Axios from 'axios'
-import { useNavigate } from 'react-router-dom'
-import Swal from 'sweetalert2'
+import { PinDropSharp } from '@material-ui/icons';
+
 const estilos = makeStyles((theme) => ({
     margenDiv: {
         margin: '20px'
@@ -25,9 +31,15 @@ const estilos = makeStyles((theme) => ({
         color: "#ffffff"
     },
     avatar: {
-        margin: '30% auto  0px',
-        backgroundColor: '#1c76d2 !important'
+        margin: theme.spacing(1),
+        backgroundColor: theme.palette.primary.main,
     },
+    avatarPosicion: {
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
+        margin: '8px 32px'
+    }
 }))
 
 const validacionLogin = yup.object({
@@ -41,9 +53,11 @@ const validacionLogin = yup.object({
 
 })
 
-const Formulario = () => {
+const Formulario = (props) => {
+    const navegacion= useNavigate()
     const clases = estilos()
-  //  let navigate = useNavigate()
+    const clasesDos = EstilosGeneral()
+    //  let navigate = useNavigate()
     const [showPassword, setShowPassword] = useState(false)
     const handleClickShowPassword = () => {
         setShowPassword(current => !current);
@@ -68,6 +82,12 @@ const Formulario = () => {
         // })
 
     }
+
+    const iniciarConGmail=async() => {
+      LoginGmail().then(() =>{ navegacion('/dashboard')})
+       
+    }
+
     const formik = useFormik({
         initialValues: {
             email: '',
@@ -80,67 +100,98 @@ const Formulario = () => {
 
     })
     return (
-        <div className={clases.margenDiv}>
-            <form onSubmit={formik.handleSubmit}>
-                <Typography component="h1" variant="h5" align='center'>
-                    <Avatar className={clases.avatar}>
-                        <LockIcon className={clases.icono} />
-                    </Avatar >
-                    Iniciar sesion
-                </Typography>
-                <TextField id="outlined-basic" label="Correo" variant="outlined"
-                    className={clases.margen}
-                    type="email"
-                    fullWidth
-                    name="email"
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    value={formik.values.email}
-                    error={formik.touched.email && Boolean(formik.errors.email)}
-                    helperText={formik.touched.email && formik.errors.email}
+        <div className={clasesDos.verticalAlign}>
+            <div className={clases.margenDiv + ' ' + clasesDos.textField}>
+                <form onSubmit={formik.handleSubmit}>
+                    <div className={clases.avatarPosicion}>
+                        <Avatar className={clases.avatar}>
 
-                />
+                            <LockOutlinedIcon color="info" />
 
-                <FormControl fullWidth className={clases.margenTextfield}
-                    error={formik.touched.password && Boolean(formik.errors.password)}
-                    variant="outlined">
-                    <InputLabel
-                    >Contraseña</InputLabel>
-                    <OutlinedInput
-                        type={showPassword ? 'text' : 'password'}
-                        name='password'
-                        value={formik.values.password}
+                        </Avatar>
+                        <Typography component="h1" variant="h5">
+                            Iniciar Sesion
+                        </Typography>
+
+                    </div>
+                    <TextField id="outlined-basic" label="Correo" variant="outlined"
+                        color="secondary"
+                        className={clases.margen}
+                        type="email"
+                        fullWidth
+                        name="email"
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
-                        endAdornment={
-                            <InputAdornment position="end">
-                                <IconButton
-                                    onClick={handleClickShowPassword}
-                                >
-                                    {showPassword ? <VisibilityOff /> : <Visibility />}
-                                </IconButton>
-                            </InputAdornment>
-                        }
-                        label="Contraseña"
+                        value={formik.values.email}
+                        error={formik.touched.email && Boolean(formik.errors.email)}
+                        helperText={formik.touched.email && formik.errors.email}
+
                     />
-                    <FormHelperText>{formik.touched.password && formik.errors.password}</FormHelperText>
-                </FormControl>
 
-                <Typography className={clases.margen}
-                    align='center'>
-                    <Button variant="contained"
-                        type="submit"
+                    <FormControl fullWidth className={clases.margenTextfield}
+                        error={formik.touched.password && Boolean(formik.errors.password)}
+                        variant="outlined">
+                        <InputLabel
+                        >Contraseña</InputLabel>
+                        <OutlinedInput
+                            type={showPassword ? 'text' : 'password'}
+                            name='password'
+                            value={formik.values.password}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            endAdornment={
+                                <InputAdornment position="end">
+                                    <IconButton
+                                        onClick={handleClickShowPassword}
+                                    >
+                                        {showPassword ? <VisibilityOff /> : <Visibility />}
+                                    </IconButton>
+                                </InputAdornment>
+                            }
+                            label="Contraseña"
+                        />
+                        <FormHelperText>{formik.touched.password && formik.errors.password}</FormHelperText>
+                    </FormControl>
+
+                    <Typography className={clases.margen}
+                        align='center'>
+                        <Button variant="contained"
+
+                            color="secondary"
+                            type="submit"
+                            fullWidth
+                        >Ingresar</Button>
+                    </Typography>
+
+
+                    <Button
+                       
                         fullWidth
-                    >Ingresar</Button>
-                </Typography>
-                <Typography align='right'>
-                    <Link href="/crearcuenta" variant="body2">
-                        ¿Deseas crear una cuenta?
-                    </Link>
-                </Typography>
-            </form>
-        </div>
+                        className="submit"
+                        className={clasesDos.BotonGoogle}
+                        onClick={() => iniciarConGmail()}
+  >
 
+                        <img className={clasesDos.imagenGoogle} src={Google} height="25" />
+                        Iniciar Con Google
+                    </Button>
+                    <Grid container>
+                        <Grid item xs>
+                            <Link variant="body2">
+                                Forgot you password?
+                            </Link>
+                        </Grid>
+                        <Grid item>
+                            <Link href="/crearcuenta" variant="body2">
+                                {"Don't have an account? Sign Up"}
+                            </Link>
+                        </Grid>
+                    </Grid>
+                </form>
+
+
+            </div>
+        </div>
 
     )
 };
